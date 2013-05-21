@@ -28,14 +28,14 @@
       }
     </style>
     <?
-		echo Html::style('assets/css/bootstrap-responsive.css');
-		echo Html::style('assets/css/prettify.css');
-		echo Html::script('assets/js/prettify.js');
+		echo HTML::style('assets/css/bootstrap-responsive.css');
+		echo HTML::style('assets/css/prettify.css');
+		echo HTML::script('assets/js/prettify.js');
 		?>
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <?
-		echo Html::script('assets/js/html5shiv.js');
+		echo HTML::script('assets/js/html5shiv.js');
 		?>
     <![endif]-->
   </head>
@@ -106,19 +106,19 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <?
-		echo Html::script('assets/js/jquery.js');
-		echo Html::script('assets/js/bootstrap-transition.js');
-		echo Html::script('assets/js/bootstrap-alert.js');
-		echo Html::script('assets/js/bootstrap-modal.js');
-		echo Html::script('assets/js/bootstrap-dropdown.js');
-		echo Html::script('assets/js/bootstrap-scrollspy.js');
-		echo Html::script('assets/js/bootstrap-tab.js');
-		echo Html::script('assets/js/bootstrap-tooltip.js');
-		echo Html::script('assets/js/bootstrap-popover.js');
-		echo Html::script('assets/js/bootstrap-button.js');
-		echo Html::script('assets/js/bootstrap-collapse.js');
-		echo Html::script('assets/js/bootstrap-carousel.js');
-		echo Html::script('assets/js/bootstrap-typeahead.js');
+		echo HTML::script('assets/js/jquery.js');
+		echo HTML::script('assets/js/bootstrap-transition.js');
+		echo HTML::script('assets/js/bootstrap-alert.js');
+		echo HTML::script('assets/js/bootstrap-modal.js');
+		echo HTML::script('assets/js/bootstrap-dropdown.js');
+		echo HTML::script('assets/js/bootstrap-scrollspy.js');
+		echo HTML::script('assets/js/bootstrap-tab.js');
+		echo HTML::script('assets/js/bootstrap-tooltip.js');
+		echo HTML::script('assets/js/bootstrap-popover.js');
+		echo HTML::script('assets/js/bootstrap-button.js');
+		echo HTML::script('assets/js/bootstrap-collapse.js');
+		echo HTML::script('assets/js/bootstrap-carousel.js');
+		echo HTML::script('assets/js/bootstrap-typeahead.js');
 		?>
   </body>
 </html>
