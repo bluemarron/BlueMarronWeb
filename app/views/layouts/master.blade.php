@@ -54,8 +54,8 @@
               <!--Logged in as <a href="#" class="navbar-link">Username</a>-->
             </p>
             <ul class="nav">
-              <li <?if(!strncmp($path, 'php/', strlen('php/'))){?>class="active"<?}?>><a href="/l4/public/php">PHP</a></li>
-              <li <?if(!strncmp($path, 'about/', strlen('about/'))){?>class="active"<?}?>><a href="/l4/public/about">About</a></li>
+              <li <?if(!strncmp($path, 'php/', strlen('php/'))){?>class="active"<?}?>><a href="/php">PHP</a></li>
+              <li <?if(!strncmp($path, 'about/', strlen('about/'))){?>class="active"<?}?>><a href="/about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -70,13 +70,13 @@
 
 							<?if(!strncmp($path, 'php/', strlen('php/'))){?>
 	              <li class="nav-header">PHP</li>
-								<li <?if($path=="php/install"){?>class="active"<?}?>><a href="/l4/public/php/install">설치</a></li>
-	              <li <?if($path=="php/basic_structure"){?>class="active"<?}?>><a href="/l4/public/php/basic_structure">기본구조</a></li>
+								<li <?if($path=="php/install"){?>class="active"<?}?>><a href="/php/install">설치</a></li>
+	              <li <?if($path=="php/basic_structure"){?>class="active"<?}?>><a href="/php/basic_structure">기본구조</a></li>
               <?}?>
 							<?if(!strncmp($path, 'about/', strlen('about/'))){?>
 	              <li class="nav-header">About</li>
-	              <li <?if($path=="about/introduction"){?>class="active"<?}?>><a href="/l4/public/about/introduction">Introduction</a></li>
-	              <li <?if($path=="about/contact"){?>class="active"<?}?>><a href="/l4/public/about/contact">Contact</a></li>
+	              <li <?if($path=="about/introduction"){?>class="active"<?}?>><a href="/about/introduction">Introduction</a></li>
+	              <li <?if($path=="about/contact"){?>class="active"<?}?>><a href="/about/contact">Contact</a></li>
 							<?}?>
               <!--
               <li><a href="#">Link</a></li>
