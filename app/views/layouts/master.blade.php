@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <?
-		echo Html::style('assets/css/bootstrap.css');
+		echo HTML::style('assets/css/bootstrap.css');
 		?>
     <style type="text/css">
       body {
