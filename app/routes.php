@@ -11,7 +11,16 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'PhpController@install');
+
+Route::get('php', 'PhpController@install');
+
+Route::get('php/install', 'PhpController@install');
+
+Route::get('php/basic_structure', 'PhpController@basicStructure');
+
+Route::get('about', 'AboutController@introduction');
+
+Route::get('about/introduction', 'AboutController@introduction');
+
+Route::get('about/contact', 'AboutController@contact');
