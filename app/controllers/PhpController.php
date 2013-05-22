@@ -12,9 +12,17 @@ class PhpController extends BaseController {
 		$this->layout->content = View::make($path, array('path' => $path));
 	}
  
-	public function basicStructure()
+	public function simpleExample()
 	{ 
-		$path = 'php/basic_structure';
+		$path = 'php/simple_example';
+
+		$this->layout->path = $path;
+		$this->layout->content = View::make($path, array('path' => $path));
+	}
+
+		public function basicVariable()
+	{ 
+		$path = 'php/basic_variable';
 
 		$this->layout->path = $path;
 		$this->layout->content = View::make($path, array('path' => $path));

@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="well">
-    <h3>기본구조</h3>
+    <h3>간단한 예제</h3>
     <p>
       안녕하세요.<br/>
       APM을 문제없이 설치하셨다면 이제 간단한 PHP 예제코드를 작성해보겠습니다.<br/><br/>
@@ -13,7 +13,7 @@
 
 <pre class="prettyprint linenums">
 &lt?
-echo "Hello World";
+echo 'Hello World';
 ?&gt</pre>
 
       코드입력을 마친 후 hello.php 파일명으로 저장하신 후 웹브라우저에서 확인해보겠습니다.<br/><br/>
@@ -36,7 +36,7 @@ echo "Hello World";
 
 <pre class="prettyprint linenums">
 &lt?
-echo "Hello World";
+echo 'Hello World';
 ?&gt</pre>
 
       보시는 바와 같이 PHP 코드 앞 뒤로 "&lt?" ... "?&gt" 와 같은 태그로 묶여야 합니다.<br/>

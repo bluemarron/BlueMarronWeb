@@ -17,7 +17,9 @@ Route::get('php', 'PhpController@install');
 
 Route::get('php/install', 'PhpController@install');
 
-Route::get('php/basic_structure', 'PhpController@basicStructure');
+Route::get('php/simple_example', 'PhpController@simpleExample');
+
+Route::get('php/basic_variable', 'PhpController@basicVariable');
 
 Route::get('about', 'AboutController@introduction');
 

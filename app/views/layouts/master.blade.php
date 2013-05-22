@@ -71,8 +71,8 @@
 							<?if(!strncmp($path, 'php/', strlen('php/'))){?>
 	              <li class="nav-header">PHP</li>
 								<li <?if($path=="php/install"){?>class="active"<?}?>><a href="/php/install">설치</a></li>
-	              <li <?if($path=="php/basic_structure"){?>class="active"<?}?>><a href="/php/basic_structure">기본구조</a></li>
-                <li <?if($path=="php/basic_variable"){?>class="active"<?}?>><a href="#">기본변수 (준비중)</a></li>
+	              <li <?if($path=="php/simple_example"){?>class="active"<?}?>><a href="/php/simple_example">간단한 예제</a></li>
+                <li <?if($path=="php/basic_variable"){?>class="active"<?}?>><a href="/php/basic_variable">기본 변수</a></li>
               <?}?>
 							<?if(!strncmp($path, 'about/', strlen('about/'))){?>
 	              <li class="nav-header">About</li>
