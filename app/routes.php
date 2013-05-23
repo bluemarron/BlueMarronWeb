@@ -21,6 +21,8 @@ Route::get('php/simple_example', 'PhpController@simpleExample');
 
 Route::get('php/basic_variable', 'PhpController@basicVariable');
 
+Route::get('php/array_variable', 'PhpController@arrayVariable');
+
 Route::get('about', 'AboutController@introduction');
 
 Route::get('about/introduction', 'AboutController@introduction');
