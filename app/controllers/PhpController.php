@@ -36,6 +36,14 @@ class PhpController extends BaseController {
 		$this->layout->content = View::make($path, array('path' => $path));
 	}
 
+	public function globalVariable()
+	{ 
+		$path = 'php/global_variable';
+
+		$this->layout->path = $path;
+		$this->layout->content = View::make($path, array('path' => $path));
+	}
+
 	/*
 	function startsWith($haystack, $needle)
 	{

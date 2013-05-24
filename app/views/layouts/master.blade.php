@@ -74,6 +74,7 @@
 	              <li <?if($path=="php/simple_example"){?>class="active"<?}?>><a href="/php/simple_example">간단한 예제</a></li>
                 <li <?if($path=="php/basic_variable"){?>class="active"<?}?>><a href="/php/basic_variable">기본 변수</a></li>
                 <li <?if($path=="php/array_variable"){?>class="active"<?}?>><a href="/php/array_variable">배열 변수</a></li>
+                <li <?if($path=="php/global_variable"){?>class="active"<?}?>><a href="/php/global_variable">전역 변수</a></li>
               <?}?>
 							<?if(!strncmp($path, 'about/', strlen('about/'))){?>
 	              <li class="nav-header">About</li>
