@@ -1,3 +1,4 @@
+<?php include_once("google_analytics.php") ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
