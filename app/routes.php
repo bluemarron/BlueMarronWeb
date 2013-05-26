@@ -25,6 +25,9 @@ Route::get('php/array_variable', 'PhpController@arrayVariable');
 
 Route::get('php/global_variable', 'PhpController@globalVariable');
 
+Route::get('php/static_variable', 'PhpController@staticVariable');
+
+
 Route::get('about', 'AboutController@introduction');
 
 Route::get('about/introduction', 'AboutController@introduction');
