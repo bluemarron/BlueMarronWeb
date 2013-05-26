@@ -56,6 +56,7 @@
             </p>
             <ul class="nav">
               <li <?if(!strncmp($path, 'php/', strlen('php/'))){?>class="active"<?}?>><a href="/php">PHP</a></li>
+              <li <?if(!strncmp($path, 'board/', strlen('board/'))){?>class="active"<?}?>><a href="/board">Board</a></li>
               <li <?if(!strncmp($path, 'about/', strlen('about/'))){?>class="active"<?}?>><a href="/about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -77,9 +78,15 @@
                 <li <?if($path=="php/array_variable"){?>class="active"<?}?>><a href="/php/array_variable">배열 변수</a></li>
                 <li <?if($path=="php/global_variable"){?>class="active"<?}?>><a href="/php/global_variable">전역 변수</a></li>
                 <li <?if($path=="php/static_variable"){?>class="active"<?}?>><a href="/php/static_variable">정적 변수</a></li>
-                          
-
               <?}?>
+
+
+              <?if(!strncmp($path, 'board/', strlen('board/'))){?>
+                <li class="nav-header">Board</li>
+                <li <?if(!strncmp($path, 'board/free_posting', strlen('board/free_posting'))){?>class="active"<?}?>><a href="/board/free_posting_list">자유 게시판</a></li>
+              <?}?>
+
+
 							<?if(!strncmp($path, 'about/', strlen('about/'))){?>
 	              <li class="nav-header">About</li>
 	              <li <?if($path=="about/introduction"){?>class="active"<?}?>><a href="/about/introduction">Introduction</a></li>

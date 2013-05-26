@@ -27,6 +27,9 @@ Route::get('php/global_variable', 'PhpController@globalVariable');
 
 Route::get('php/static_variable', 'PhpController@staticVariable');
 
+Route::get('board', 'BoardController@freePostingList');
+
+Route::get('board/free_posting_list', 'BoardController@freePostingList');
 
 Route::get('about', 'AboutController@introduction');
 
