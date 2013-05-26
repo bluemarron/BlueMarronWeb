@@ -9,7 +9,7 @@
     <?
 		echo HTML::style('assets/css/bootstrap.css');
 		?>
-    <style type="text/css">
+    <style type="text/css"> 
       body {
         padding-top: 60px;
         padding-bottom: 40px;
