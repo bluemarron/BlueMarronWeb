@@ -1,4 +1,3 @@
-<?php include_once("google_analytics.php") ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,6 +31,7 @@
 		echo HTML::style('assets/css/bootstrap-responsive.css');
 		echo HTML::style('assets/css/prettify.css');
 		echo HTML::script('assets/js/prettify.js');
+    echo HTML::script('assets/js/google_analytics.js');
 		?>
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
