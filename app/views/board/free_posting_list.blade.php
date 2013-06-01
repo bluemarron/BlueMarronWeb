@@ -8,7 +8,7 @@
 				<caption></caption>				
   			<thead>
 					<tr>
-			      <th style="text-align:center;">번호</th>
+			      <th style="width:40px;text-align:center;">번호</th>
 			      <th>제목</th>
 		    	</tr>
 		  </thead>
@@ -33,7 +33,7 @@
 				$num = $tot_rows_cnt - $idx;
 				?>	
 				<tr>
-					<td style="width:40px;text-align:center;"><?=$num?></td>
+					<td style="text-align:center;"><?=$num?></td>
 					<td style="text-align:left;"><?=$free_postings[$idx]->subject?></td>
 				</tr>
 			<?
