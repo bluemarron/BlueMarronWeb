@@ -6,12 +6,12 @@ class BoardController extends BaseController {
 
 	public function freePostingList()
 	{ 
-		$results = DB::select('select * from free_postings');
+		$free_postings = DB::select('select * from free_postings');
 
 		$path = 'board/free_posting_list';
 
 		$this->layout->path = $path;
-		$this->layout->content = View::make($path, array('path' => $path));
+		$this->layout->content = View::make($path, array('path' => $path, 'free_postings' => $free_postings));
 	}
  
 }

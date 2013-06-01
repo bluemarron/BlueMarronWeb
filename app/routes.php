@@ -11,6 +11,11 @@
 |
 */
 
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+
 Route::get('/', 'PhpController@install');
 
 Route::get('php', 'PhpController@install');
