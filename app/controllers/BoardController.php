@@ -4,9 +4,10 @@ class BoardController extends BaseController {
   
   protected $layout = 'layouts.master';
 
-	public function freePostingList()
-	{ 
-		$free_postings = DB::select('select * from free_postings');
+	public function freePostingList() {
+
+		$free_postings = FreePosting::all();
+		#$free_postings = DB::select('select * from free_postings');
 
 		$path = 'board/free_posting_list';
 
