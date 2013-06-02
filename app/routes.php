@@ -36,6 +36,12 @@ Route::get('board', 'BoardController@freePostingList');
 
 Route::get('board/free_posting_list', 'BoardController@freePostingList');
 
+Route::get('board/free_posting_view', 'BoardController@freePostingView');
+
+Route::get('board/free_posting_regist', 'BoardController@freePostingRegist');
+
+Route::post('board/free_posting_regist_save', 'BoardController@freePostingRegistSave');
+
 Route::get('about', 'AboutController@introduction');
 
 Route::get('about/introduction', 'AboutController@introduction');

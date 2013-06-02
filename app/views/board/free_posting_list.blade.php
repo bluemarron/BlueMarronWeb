@@ -14,7 +14,7 @@
 		  </thead>
 			<tbody>
     	<?
-			$rows_per_page = 10;
+    	$rows_per_page = 10;
 			$pages_per_block = 10;	
 
     	$cur_page = Input::get('cur_page');    	
@@ -34,7 +34,7 @@
 				?>	
 				<tr>
 					<td style="text-align:center;"><?=$num?></td>
-					<td style="text-align:left;"><?=$free_postings[$idx]->subject?></td>
+					<td style="text-align:left;"><a href="/board/free_posting_view?id=<?=$free_postings[$idx]->id?>"><?=$free_postings[$idx]->subject?></a></td>
 				</tr>
 			<?
 			}		
@@ -47,6 +47,11 @@
 				//echo $cur_page;
 				?>
 			</div>
+    </p>
+    <p>
+    	<div align="left">
+				<a href="/board/free_posting_regist" class="btn">작성</a>
+			</div>	
     </p>
   </div>
 @stop      
