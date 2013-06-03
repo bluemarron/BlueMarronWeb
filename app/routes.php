@@ -42,6 +42,14 @@ Route::get('board/free_posting_regist', 'BoardController@freePostingRegist');
 
 Route::post('board/free_posting_regist_save', 'BoardController@freePostingRegistSave');
 
+Route::get('board/free_posting_modify', 'BoardController@freePostingModify');
+
+Route::post('board/free_posting_modify_save', 'BoardController@freePostingModifySave');
+
+Route::get('board/free_posting_delete', 'BoardController@freePostingDelete');
+
+Route::post('board/free_posting_delete_save', 'BoardController@freePostingDeleteSave');
+
 Route::get('about', 'AboutController@introduction');
 
 Route::get('about/introduction', 'AboutController@introduction');

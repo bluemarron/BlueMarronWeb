@@ -2,6 +2,11 @@
 
 @section('content')
 	<script>
+		var message = "<?=$message?>";
+
+		if(message != "")
+			alert(message);
+
 		function save() {
 			if(form.nickname.value == "") {
 				alert("작성자를 입력하세요.");
@@ -12,19 +17,6 @@
 			if(form.passwd.value == "") {
 				alert("패스워드를 입력하세요.");
 				form.passwd.focus();
-				return;
-			}
-
-			if(form.re_passwd.value == "") {
-				alert("확인용 패스워드를 입력하세요.");
-				form.re_passwd.focus();
-				return;
-			}
-
-
-			if(form.passwd.value != form.re_passwd.value) {
-				alert("패스워드가 일치하지 않습니다. 패스워드를 다시 입력하세요.");
-				form.re_passwd.focus();
 				return;
 			}
 
@@ -52,10 +44,12 @@
   <div class="well">
     <h3>자유 게시판</h3>
     <p>
-			<form name="form" id="form" action="/board/free_posting_regist_save" method="post">
+			<form name="form" id="form" action="/board/free_posting_modify_save" method="post">
+		    <input type="hidden" id="id" name="id" value="<?=$free_posting->id?>">
+
 			  <fieldset>
 			    <label>작성자</label>
-			    <input type="text" id="nickname" name="nickname" class="span4" placeholder="작성자를 입력하세요.">
+			    <input type="text" id="nickname" name="nickname" value="<?=$free_posting->nickname?>" class="span4" placeholder="작성자를 입력하세요.">
 			  </fieldset>
 
 			  <fieldset>
@@ -64,18 +58,13 @@
 			  </fieldset>
 
 			  <fieldset>
-			    <label>패스워드 (확인)</label>
-			    <input type="password" id="re_passwd" name="re_passwd" class="span4" placeholder="패스워드를 입력하세요.">
-			  </fieldset>
-
-			  <fieldset>
 			    <label>제목</label>
-			    <input type="text" id="subject" name="subject" class="span12" placeholder="제목을 입력하세요.">
+			    <input type="text" id="subject" name="subject" value="<?=$free_posting->subject?>" class="span12" placeholder="제목을 입력하세요.">
 			  </fieldset>
 			  
 			  <fieldset>
 			    <label>내용</label>
-			    <textarea rows="12" id="content" name="content" class="span12" placeholder="내용을 입력하세요."></textarea>
+			    <textarea rows="12" id="content" name="content" class="span12" placeholder="내용을 입력하세요."><?=$free_posting->content?></textarea>
 			  </fieldset>
 			</form>
 		</p>

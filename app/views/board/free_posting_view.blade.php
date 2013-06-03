@@ -22,6 +22,12 @@
     <h3>자유 게시판</h3>
     <p>
 		  <fieldset>
+		   	<label>작성자</label>
+		   	<div class="well well-small">
+					<?=$free_posting->nickname?>
+		    </div>
+		  </fieldset>    	
+		  <fieldset>
 		   	<label>제목</label>
 		   	<div class="well well-small">
 					<?=$free_posting->subject?>
@@ -37,6 +43,8 @@
     <p>
     	<div align="left">
 				<a href="/board/free_posting_list" class="btn">목록</a>
+    		<a href="/board/free_posting_modify?id=<?=$free_posting->id?>" class="btn btn-warning">수정</a>
+    		<a href="/board/free_posting_delete?id=<?=$free_posting->id?>" class="btn btn-danger">삭제</a>
 			</div>	
     </p>
   </div>
