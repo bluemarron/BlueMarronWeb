@@ -54,7 +54,7 @@
 
 			  <fieldset>
 			    <label>패스워드</label>
-			    <input type="password" id="passwd" name="passwd" class="span4">
+			    <input type="password" id="passwd" name="passwd" class="span4" placeholder="패스워드를 입력하세요.">
 			  </fieldset>
 
 			  <fieldset>
