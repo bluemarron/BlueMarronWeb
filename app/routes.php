@@ -50,6 +50,12 @@ Route::get('board/free_posting_delete', 'BoardController@freePostingDelete');
 
 Route::post('board/free_posting_delete_save', 'BoardController@freePostingDeleteSave');
 
+Route::post('board/free_posting_comment_regist_save', 'BoardCommentController@freePostingCommentRegistSave');
+
+Route::get('board/free_posting_comment_delete', 'BoardCommentController@freePostingCommentDelete');
+
+Route::post('board/free_posting_comment_delete_save', 'BoardCommentController@freePostingCommentDeleteSave');
+
 Route::get('about', 'AboutController@introduction');
 
 Route::get('about/introduction', 'AboutController@introduction');

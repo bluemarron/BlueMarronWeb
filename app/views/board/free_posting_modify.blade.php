@@ -48,22 +48,22 @@
 		    <input type="hidden" id="id" name="id" value="<?=$free_posting->id?>">
 
 			  <fieldset>
-			    <label>작성자</label>
+			    <label><i class="icon-ok"></i> 작성자</label>
 			    <input type="text" id="nickname" name="nickname" value="<?=$free_posting->nickname?>" class="span4" placeholder="작성자를 입력하세요.">
 			  </fieldset>
 
 			  <fieldset>
-			    <label>패스워드</label>
+			    <label><i class="icon-ok"></i> 패스워드</label>
 			    <input type="password" id="passwd" name="passwd" class="span4" placeholder="패스워드를 입력하세요.">
 			  </fieldset>
 
 			  <fieldset>
-			    <label>제목</label>
+			    <label><i class="icon-ok"></i> 제목</label>
 			    <input type="text" id="subject" name="subject" value="<?=$free_posting->subject?>" class="span12" placeholder="제목을 입력하세요.">
 			  </fieldset>
 			  
 			  <fieldset>
-			    <label>내용</label>
+			    <label><i class="icon-ok"></i> 내용</label>
 			    <textarea rows="12" id="content" name="content" class="span12" placeholder="내용을 입력하세요."><?=$free_posting->content?></textarea>
 			  </fieldset>
 			</form>

@@ -59,7 +59,7 @@
     </p>
     <p>
     	<div align="left">
-				<a href="/board/free_posting_regist" class="btn">작성</a>
+				<a href="/board/free_posting_regist" class="btn btn-success">작성</a>
 			</div>	
     </p>
   </div>

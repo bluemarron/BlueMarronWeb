@@ -20,11 +20,12 @@
   <div class="well">
     <h3>자유 게시판</h3>
     <p>
-			<form name="form" id="form" action="/board/free_posting_delete_save" method="post">
-		    <input type="hidden" id="id" name="id" value="<?=$free_posting->id?>">
+			<form name="form" id="form" action="/board/free_posting_comment_delete_save" method="post">
+		    <input type="hidden" id="id" name="id" value="<?=$id?>">
+		    <input type="hidden" id="id" name="parent_id" value="<?=$parent_id?>">
 
 			  <fieldset>
-			    <label><i class="icon-ok"></i> 패스워드</label>
+			    <label><i class="icon-ok"></i> 댓글 패스워드</label>
 			    <input type="password" id="passwd" name="passwd" class="span4" placeholder="패스워드를 입력하세요.">
 			  </fieldset>
 

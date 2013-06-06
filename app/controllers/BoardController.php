@@ -18,11 +18,12 @@ class BoardController extends BaseController {
 		$id = Input::get('id');
 
 		$free_posting = FreePosting::find($id);
+		$free_posting_comments = DB::select('select * from free_posting_comments where parent_id = ' . $id);
 
 		$path = 'board/free_posting_view';
 
 		$this->layout->path = $path;
-		$this->layout->content = View::make($path, array('path' => $path, 'free_posting' => $free_posting));
+		$this->layout->content = View::make($path, array('path' => $path, 'free_posting' => $free_posting, 'free_posting_comments' => $free_posting_comments));
 	}
 
 	public function freePostingRegist() {
