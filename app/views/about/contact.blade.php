@@ -6,5 +6,8 @@
     <p>
       jack.bluemarron<img src="/images/at_sign.png" width="12">gmail.com
     </p>
+    <p>
+      <img src="/images/jack.png" width="180">
+    </p>
   </div>
 @stop
