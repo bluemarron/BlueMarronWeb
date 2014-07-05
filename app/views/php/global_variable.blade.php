@@ -16,20 +16,20 @@
 &lt?
 $color = 'blue';
 
-function get_color() 
+function getColor() 
 {
   echo 'color: ' . $color;
 }
 
-get_color();
+getColor();
 ?&gt</pre>
 
       <p>
-        위 예제코드는 get_color() 함수 밖에서 $color 변수에 'blue' 라는 문자열을 저장하고 
-        get_color() 함수를 호출하여 $color 값을 출력하는 코드입니다.<br/>
+        위 예제코드는 getColor() 함수 밖에서 $color 변수에 'blue' 라는 문자열을 저장하고 
+        getColor() 함수를 호출하여 $color 값을 출력하는 코드입니다.<br/>
         (함수에 대해서는 추후 강좌에서 설명드리습니다.)<br/><br/>
 
-        아마 어떤 분들은 get_color() 함수를 호출할 때, "color: blue" 와 같은 결과가 출력될 것이라고 생각하실지 모릅니다.<br/>
+        아마 어떤 분들은 getColor() 함수를 호출할 때, "color: blue" 와 같은 결과가 출력될 것이라고 생각하실지 모릅니다.<br/>
         하지만, 위 예제코드의 결과를 확인하면 아래와 같습니다.
       </p>
         

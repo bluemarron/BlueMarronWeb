@@ -1,0 +1,3 @@
+tes.php
+<?php
+phpinfo()?>

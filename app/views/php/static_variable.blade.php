@@ -15,7 +15,7 @@
 function increase() 
 {
   $count = 0;
-  echo 'count: ' . $count . '&ltbr/&gt';
+  echo 'count: ' . $count . '&ltbr&gt';
   $count++;
 }
 
@@ -26,7 +26,7 @@ increase();
 
       <p>
         위 예제코드는 $count 변수의 값을 1씩 증가시키는 increase() 함수를 세 번 호출하고 있습니다.<br/>
-        (위 코드에 사용된 '&ltbr/&gt' 태그는 다음 줄로 출력하라는 의미입니다.)<br/><br/>
+        (위 코드에 사용된 '&ltbr&gt' 태그는 다음 줄로 출력하라는 의미입니다.)<br/><br/>
 
         그런데 위 프로그램을 실행하면 우리가 기대하는 것과는 다르게 아래와 같은 결과를 얻게 될 것입니다.
       </p>
