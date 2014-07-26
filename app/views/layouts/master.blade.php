@@ -78,6 +78,8 @@
                 <li <?if($path=="php/array_variable"){?>class="active"<?}?>><a href="/php/array_variable">배열 변수</a></li>
                 <li <?if($path=="php/global_variable"){?>class="active"<?}?>><a href="/php/global_variable">전역 변수</a></li>
                 <li <?if($path=="php/static_variable"){?>class="active"<?}?>><a href="/php/static_variable">정적 변수</a></li>
+                <li <?if($path=="php/variable_variable"){?>class="active"<?}?>><a href="/php/variable_variable">가변 변수</a></li>
+
               <?}?>
 
 
