@@ -41,7 +41,7 @@ echo '$language is $English.';
         위의 경우처럼 변수의 값을 이름으로 가지는 변수를 가변 변수라고 합니다.<br/><br/>
 
         또한, 위 예제 코드와 같이 가변 변수를 정의한 경우,<br/>
-        "difficult" 라는 값을 얻기 위해 echo $English 와 동일한 또 다른 표현식으로 echo ${language} 와 같이 사용할 수도 있습니다.<br/><br/>
+        "difficult" 라는 값을 얻기 위해 echo $English 와 동일한 또 다른 표현식으로 echo ${$language} 와 같이 사용할 수도 있습니다.<br/><br/>
 
         오늘 내용은 여기까지입니다~
       </p> 
