@@ -20,6 +20,8 @@ Route::get('/', 'PhpController@install');
 
 Route::get('php', 'PhpController@install');
 
+// PHP lectures
+
 Route::get('php/install', 'PhpController@install');
 
 Route::get('php/simple_example', 'PhpController@simpleExample');
@@ -33,6 +35,10 @@ Route::get('php/global_variable', 'PhpController@globalVariable');
 Route::get('php/static_variable', 'PhpController@staticVariable');
 
 Route::get('php/variable_variable', 'PhpController@variableVariable');
+
+Route::get('php/form_handling', 'PhpController@formHandling');
+
+// Free board
 
 Route::get('board', 'BoardController@freePostingList');
 

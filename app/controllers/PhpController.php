@@ -60,6 +60,15 @@ class PhpController extends BaseController {
 		$this->layout->content = View::make($path, array('path' => $path));
 	}
 
+
+	public function formHandling()
+	{ 
+		$path = 'php/form_handling';
+
+		$this->layout->path = $path;
+		$this->layout->content = View::make($path, array('path' => $path));
+	}
+
 	/*
 	function startsWith($haystack, $needle)
 	{
