@@ -96,7 +96,7 @@ echo '결과값 : ' . $first . '&ltbr>';
 $first -= 4;
 echo '결과값 : ' . $first . '&ltbr>';
 
-$second = '철희는 ';
+$second = '미즐 ';
 $second .= '바보다 ~~';
 echo '결과값 : ' . $second;
 ?&gt</pre>
@@ -108,7 +108,7 @@ echo '결과값 : ' . $second;
       <div class="alert alert-info">
         결과값 : 17<br>
         결과값 : 13<br>
-        결과값 : 철희는 바보다 ~~
+        결과값 : 미즐은 바보다 ~~
       </div>
 
       <p>
