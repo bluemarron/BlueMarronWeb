@@ -96,7 +96,7 @@ echo '결과값 : ' . $first . '&ltbr>';
 $first -= 4;
 echo '결과값 : ' . $first . '&ltbr>';
 
-$second = '미즐 ';
+$second = '미즐은 ';
 $second .= '바보다 ~~';
 echo '결과값 : ' . $second;
 ?&gt</pre>
@@ -119,9 +119,9 @@ echo '결과값 : ' . $second;
 
       $first -= 4; 역시 $first = $first - 4 와 같은 의미로 $first = 17 - 4 로 인식되어 13 이 $first 에 저장되겠죠.<br/><br/>
 
-      마찬가지로 $second .= " 바보다 ~~"; 은 $second = $second . " 바보다 ~~"; 와 같은 의미이며,<br/>
-      이 구문이 쓰이기 전에 $second 에 "미즐은" 문자열이 저장되었기 때문에,<br/>
-      $second = "미즐은" . " 바보다 ~~"; 와 같이 되어 $second 에는 "미즐은 바보다 ~~" 문자열이 저장되겠죠.<br/><br/>
+      마찬가지로 $second .= '바보다 ~~'; 은 $second = $second . '바보다 ~~'; 와 같은 의미이며,<br/>
+      이 구문이 쓰이기 전에 $second 에 '미즐은' 문자열이 저장되었기 때문에,<br/>
+      $second = '미즐은 ' . '바보다 ~~'; 와 같이 되어 $second 에는 '미즐은 바보다 ~~' 문자열이 저장되겠죠.<br/><br/>
 
       오늘 내용도 쉽죠 ^^
       </p>  
