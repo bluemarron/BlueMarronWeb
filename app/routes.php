@@ -38,6 +38,8 @@ Route::get('php/variable_variable', 'PhpController@variableVariable');
 
 Route::get('php/form_handling', 'PhpController@formHandling');
 
+Route::get('php/operator', 'PhpController@operator');
+
 // Free board
 
 Route::get('board', 'BoardController@freePostingList');

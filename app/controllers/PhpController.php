@@ -69,6 +69,14 @@ class PhpController extends BaseController {
 		$this->layout->content = View::make($path, array('path' => $path));
 	}
 
+	public function operator()
+	{ 
+		$path = 'php/operator';
+
+		$this->layout->path = $path;
+		$this->layout->content = View::make($path, array('path' => $path));
+	}
+	
 	/*
 	function startsWith($haystack, $needle)
 	{

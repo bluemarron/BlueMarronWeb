@@ -80,9 +80,8 @@
                 <li <?if($path=="php/static_variable"){?>class="active"<?}?>><a href="/php/static_variable">정적 변수</a></li>
                 <li <?if($path=="php/variable_variable"){?>class="active"<?}?>><a href="/php/variable_variable">가변 변수</a></li>
                 <li <?if($path=="php/form_handling"){?>class="active"<?}?>><a href="/php/form_handling">폼(Form)을 통한 변수 처리</a></li>
-
+                <li <?if($path=="php/operator"){?>class="active"<?}?>><a href="/php/operator">산술 및 대입 연산자</a></li>
               <?}?>
-
 
               <?if(!strncmp($path, 'board/', strlen('board/'))){?>
                 <li class="nav-header">Board</li>
